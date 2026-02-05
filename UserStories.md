@@ -1,3 +1,4 @@
+User Stories for techNotes
 Replace current sticky note system
 Add a public facing page with basic contact info
 Add an employee login to the notes app
@@ -16,3 +17,4 @@ Anyone can create a note (when customer checks-in)
 Employees can only view and edit their assigned notes
 Managers and Admins can view,edit,and delete all nootes
 Only Managers and Admins can access User Settings
+Desktop mode is most important but should be available in mobile
