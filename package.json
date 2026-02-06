@@ -1,10 +1,11 @@
 {
   "name": "lesson_01",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "techNotes MERN Project",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/Denis-Jovith/MERN_CHALLANGE_Mongo_Express_React_Node_Projects/issues"
   },
-  "homepage": "https://github.com/Denis-Jovith/MERN_CHALLANGE_Mongo_Express_React_Node_Projects#readme"
+  "homepage": "https://github.com/Denis-Jovith/MERN_CHALLANGE_Mongo_Express_React_Node_Projects#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
 }
