@@ -2,10 +2,10 @@
 
 // console.log(global);
 
-const os = require('os')
-const path = require('path')
-const math=require('./math')
-const {add,substract,multiply,divide} = require('./math')
+const os = require('os');
+const path = require('path');
+const math=require('./math');
+const {add,substract,multiply,divide} = require('./math');
 
 
 console.log(math.add(2,3))
