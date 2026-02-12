@@ -1,4 +1,6 @@
 const { format } = require('date-fns');
 
 
-console.log(formaty(new Date, 'yyyyMMdd\tHH:mm:ss'))
+console.log(format(new Date, 'yyyy-MM-dd HH:mm:ssXXX zzz'))
+
+console.log('hello')
