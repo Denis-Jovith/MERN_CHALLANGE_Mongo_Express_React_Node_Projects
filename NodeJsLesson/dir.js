@@ -5,6 +5,8 @@ if(!fs.existsSync('./new')) {
     if (err) throw err;
     console.log('Directory Created')
 })
+
+
 }
 
 if(fs.existsSync('./new')) {
