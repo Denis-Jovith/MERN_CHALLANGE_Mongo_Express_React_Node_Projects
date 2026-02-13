@@ -8,7 +8,7 @@ class MyEmitter extends EventEmiter {};
 const myEmiter = new MyEmitter();
 
 //add listen for the log event
-myEmiter.on('log',(message) => logEvents(message));
+myEmiter.on('log',(msg) => logEvents(msg));
 setTimeout( () => {
     //Emit event
     myEmiter.emit('log', 'log event emmited!')
