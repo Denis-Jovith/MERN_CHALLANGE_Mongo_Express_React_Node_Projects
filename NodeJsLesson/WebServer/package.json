@@ -2,10 +2,10 @@
   "name": "webserver",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,9 @@
   "type": "commonjs",
   "dependencies": {
     "date-fns": "^4.1.0",
-    "nodemon": "^3.1.11",
     "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
