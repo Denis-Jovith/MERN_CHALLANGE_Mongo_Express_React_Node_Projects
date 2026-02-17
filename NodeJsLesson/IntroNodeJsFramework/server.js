@@ -3,6 +3,20 @@ const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 3500;
 
+
+//Custom Middleware
+
+
+//MIDDLEWARE
+app.use(express.urlencoded({extended:false}));
+
+app.use(express.json());
+
+//serve static files
+app.use(express.static(path.join(__dirname, '/public')))
+
+
+
 app.get(/^\/$|\/index(\.html)?$/,(req,res) => {
     //res.sendFile('./views/index.html',{root:__dirname});
     res.sendFile(path.join(__dirname,'views','index.html'));
