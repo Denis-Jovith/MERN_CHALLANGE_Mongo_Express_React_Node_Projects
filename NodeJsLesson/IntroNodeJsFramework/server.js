@@ -1,13 +1,18 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const cors = require('cors');
+const {logger,logEvents} = require('./middleware/logEvents')
 const PORT = process.env.PORT || 3500;
 
 
-//Custom Middleware
+//Custom Middleware Logger
+app.use(logger);
 
+//3rd part middleware Cross Origin Resource Sharing
+app.use(cors())
 
-//MIDDLEWARE
+//builtin MIDDLEWARE
 app.use(express.urlencoded({extended:false}));
 
 app.use(express.json());
